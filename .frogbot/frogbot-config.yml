@@ -1,0 +1,11 @@
+- params:
+    git:
+      repoName: npm-test
+      branches:
+        - main
+    scan:
+      includeAllVulnerabilities: true
+      projects:
+        - installCommand: npm i
+    jfrogPlatform:
+      jfrogProjectKey: 
