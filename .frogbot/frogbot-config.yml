@@ -1,6 +1,6 @@
 - params:
     git:
-      repoName: npm-test
+      repoName: demo-project-npm
       branches:
         - main
     scan:
