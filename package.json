@@ -24,6 +24,7 @@
     "cypress": "^6.0.0",
     "jsonwebtoken": "^4.2.2",
     "rxjs": "~6.2.0",
+    "sanitize-html": "^1.4.3",
     "socket.io-parser": "^3.3.0",
     "zone.js": "~0.8.26"
   },
