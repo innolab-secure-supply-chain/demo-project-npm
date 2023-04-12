@@ -18,3 +18,8 @@ jobs:
         run: |
           eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
           dependency-check -o reports --prettyPrint --project "Demo Project npm" -s . --disableOssIndex
+      - name: Archive scan report
+        uses: actions/upload-artifact@v3
+        with:
+          name: owasp dependency-check reports
+          path: reports
