@@ -18,6 +18,7 @@ jobs:
         run: |
           eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
           dependency-check -o reports --prettyPrint --project "Demo Project npm" -s . --disableOssIndex
+          # add --failOnCVSS 7 to break build on CVSS score >=7
       - name: Archive scan report
         uses: actions/upload-artifact@v3
         with:
