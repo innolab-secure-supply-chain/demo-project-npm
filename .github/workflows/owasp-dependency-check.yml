@@ -1,0 +1,20 @@
+on: [push,pull_request]
+
+name: OWASP dependency-check Action
+jobs:
+  owasp-dependency-check:
+    name: OWASP dependency-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependency-check
+        run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          brew install dependency-check
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: run scan
+        run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          dependency-check -o reports --prettyPrint --project "Demo Project npm" -s .
