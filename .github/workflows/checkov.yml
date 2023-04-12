@@ -1,6 +1,6 @@
 on: [push,pull_request]
 
-name: OWASP dependency-check Action
+name: checkov Action
 jobs:
   checkov-check:
     name: checkov check
@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Install checkov
         run: |
-          pip3 install checkov 
+          pip3 install checkov
 
       - name: Checkout
         uses: actions/checkout@v3
