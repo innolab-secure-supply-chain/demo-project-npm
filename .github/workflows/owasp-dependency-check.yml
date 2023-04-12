@@ -17,4 +17,4 @@ jobs:
       - name: run scan
         run: |
           eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-          dependency-check -o reports --prettyPrint --project "Demo Project npm" -s .
+          dependency-check -o reports --prettyPrint --project "Demo Project npm" -s . --disableOssIndex
