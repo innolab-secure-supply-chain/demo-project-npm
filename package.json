@@ -28,7 +28,7 @@
     "cypress": "^6.0.0",
     "jsonwebtoken": "^4.2.2",
     "lodash.findlast": "^4.6.0",
-    "rxjs": "~6.2.0",
+    "rxjs": "~6.6.7",
     "socket.io-parser": "^3.3.0",
     "vscode-github-actions": "^0.0.1-security",
     "zone.js": "~0.8.26",
